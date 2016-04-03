@@ -2,6 +2,8 @@ extends ../../layout
 block body
   h1 Profil de #{user.email}
 
+  p Votre url d'invitation est: http://127.0.0.1/?id_ref=#{user._id}
+
   ul
     li Invitations: #{user.invitations.length}
     li Confirmées: #{user.invitations_confirmed}
