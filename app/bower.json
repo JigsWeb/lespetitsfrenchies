@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "main": "index.js",
+  "authors": [
+    "moynet_a <anthony.moynet@epitech.eu>"
+  ],
+  "description": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": ""
+}

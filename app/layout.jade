@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(type='text/css', rel='stylesheet', href='/public/Materialize/dist/css/materialize.min.css',  media='screen,projection')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Viral Waiting List
+body
+  nav
+    div(class='nav-wrapper')
+      a(href='#' class='brand-logo center') Logo
+      ul(id='nav-mobile' class='left hide-on-med-and-down')
+        li
+          a(href='sass.html') Sass
+        li
+          a(href='badges.html') Components
+        li
+          a(href='collapsible.html') JavaScript
+
+  block body
+
+  script(type='text/javascript', src='/public/jquery/dist/jquery.min.js')
+  script(type='text/javascript', src='/public/Materialize/dist/js/materialize.min.js')
+
+  unless flash
+    script(type='text/javascript').
+      Materialize.toast(#{flash}, 3000, 'rounded')
+
+    p #{flash}

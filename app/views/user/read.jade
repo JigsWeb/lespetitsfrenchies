@@ -1,0 +1,8 @@
+extends ../../layout
+block body
+  h1 Profil de #{user.email}
+
+  ul
+    li Invitations: #{user.invitations.length}
+    li Confirmées: #{user.invitations_confirmed}
+    li Position liste d'attente: #{waitingListPosition}
