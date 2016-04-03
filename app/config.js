@@ -17,8 +17,8 @@ config.mongodb = {
 config.mailer = {
     service: 'Gmail',
     auth: {
-        user: 'anthony.moynet2@gmail.com',
-        pass: '11Caca11'
+        user: 'exemple@gmail.com',
+        pass: 'exemple'
     }
 }
 
